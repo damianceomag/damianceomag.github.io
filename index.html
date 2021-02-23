@@ -29,14 +29,58 @@
     </section>
 
     <footer>
-        <h2>Contact me:</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <p>© 2021 Damian Ceomag</p>
+        <div id="footerSection">
+            <div id="detailsColumn">
+                <a href="tel:0040732498021">
+                    <div id="phoneContainer">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>0040 732 498 021</p>
+                    </div>
+                </a>
+
+                <a href="https://goo.gl/maps/nF1qgdNMbTtsgziE9" target="_blank">
+                    <div id="locationContainer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Brasov, Romania</p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="formColumn">
+                <h1>Get in touch with me</h1>
+
+                <div>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" class="input">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="input">
+                </div>
+
+                <input type="email" id="userEmail" name="userEmail" placeholder="Email Address" class="input">
+                <textarea id="message" name="message" placeholder="Leave your message..." class="input"></textarea>
+
+                <button onclick="sendEmail()" class="input">Send</button>
+            </div>
+        </div>
+
+        <div id="bottomBar">
+            <p>© 2021 Damian Ceomag</p>
+
+            <div id="socialIcons">
+                <a href="https://www.linkedin.com/in/damian-ceomag/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/Damian_Ceomag"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/damianceomag"><i class="fab fa-github"></i></a>
+            </div>
+
+        </div>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./email_service.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/433568d708.js" crossorigin="anonymous"></script>
+
+    <!-- EmailJS Service: -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </body>
 
 </html>

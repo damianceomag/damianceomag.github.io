@@ -1,0 +1,30 @@
+/* SECTION: */
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    margin-bottom: 1%;
+}
+
+section img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+section p {
+    display: flex;
+    justify-content: flex-end;
+
+    color: #fff;
+}
+
+section p:first-of-type {
+    padding-top: 0.8rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+}

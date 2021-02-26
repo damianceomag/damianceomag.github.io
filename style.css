@@ -176,14 +176,14 @@ a {
     font-size: 0.95rem;
   }
 
-  textarea.input {
+textarea.input {
     min-height: 150px;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
   }
 
-  #message::placeholder {
+#message::placeholder {
     color: white;
 }
 

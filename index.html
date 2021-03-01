@@ -8,13 +8,16 @@
     <title>Damian Ceomag</title>
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile styles/style_mobile.css">
+    <link rel="stylesheet" href="./mobile styles/index.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <header>
         <a href="./index.html">
-            <h1>Damian Ceomag</h1>
+            <h1 id="logo"> <span id="tagLeft">&lt;name&gt;</span> Damian Ceomag <span id="tagRight">&lt;/name&gt;</span>
+            </h1>
         </a>
 
         <ul>
@@ -22,10 +25,10 @@
                 <li>HOME</li>
             </a>
             <a href="./pages/myprojects/myprojects.html">
-                <li>MY PROJECTS</li>
+                <li>PROJECTS</li>
             </a>
-            <a href="./pages/mycv/mycv.html">
-                <li>MY CV</li>
+            <a href="./pages/skills/skills.html">
+                <li>SKILLS</li>
             </a>
             <a href="./pages/about me/aboutme.html">
                 <li>ABOUT ME</li>
@@ -69,6 +72,11 @@
                 <textarea id="message" name="message" placeholder="Leave your message..." class="input"></textarea>
 
                 <button onclick="sendEmail()" class="input" id="sendButton">Send</button>
+
+                <p id="errorMessage">*Please complete all fields before sending</p>
+
+                <p id="sentMessage">Thank you for your message!</p>
+
             </div>
         </div>
 
@@ -86,6 +94,7 @@
 
     <!-- SCRIPTS -->
     <script src="./email_service.js"></script>
+    <script src="./index.js"></script>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/433568d708.js" crossorigin="anonymous"></script>

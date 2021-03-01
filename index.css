@@ -18,8 +18,6 @@ section img {
 section p {
     display: flex;
     justify-content: flex-end;
-
-    color: #fff;
 }
 
 section p:first-of-type {

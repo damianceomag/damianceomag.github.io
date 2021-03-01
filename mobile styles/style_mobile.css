@@ -1,0 +1,86 @@
+@media only screen and (max-width: 800px) {
+    @font-face {
+        font-family: WorkSans;
+        src: url(./assets/font-name/WorkSans-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: Quicksand;
+        src: url(./assets/font-page/Quicksand-Regular.ttf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Quicksand;
+        box-sizing: border-box;
+    
+        animation-timing-function: linear;
+    } 
+
+    body {
+        min-height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* HEADER: */
+
+header {
+    display: flex;
+
+    background-color: black;
+}
+
+header h1 {
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 1rem;
+
+    font-size: 1.5rem;
+    font-family: WorkSans;
+    color: #fff;
+}
+
+header h1 span {
+    display: none;
+}
+
+header ul {
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 9vh;
+    margin-top: 1vh;
+    /* margin: 0 auto; */
+    
+}
+
+header ul li {
+    display: flex;
+    list-style-type: none;
+
+    padding: 20px 70px;
+
+    color: #fff;
+    font-weight: 400;
+}
+
+header ul li:hover {
+    color: black;
+    font-weight: 800;
+    box-sizing: content-box;
+    transition: 0.2s;
+}
+
+header ul a:hover {
+    background-color: white;
+    transition: 0.2s;
+    /* border-bottom: 10px solid rgb(43, 101, 189); */
+}
+
+
+}

@@ -271,7 +271,7 @@ textarea.input {
     background-color: rgb(209, 164, 16);
 }
 
-#bottomBar {
+.bottomBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -282,13 +282,15 @@ textarea.input {
     color: rgb(219, 216, 216);
 }
 
-#bottomBar p {
+.bottomBar p {
     display: flex;
     margin-left: 30px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
+    color: rgb(48, 48, 48);
 }
 
-#socialIcons {
+.socialIcons {
     display: flex;
     margin-right: 30px;
     font-size: 2.5rem;

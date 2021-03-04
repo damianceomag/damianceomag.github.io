@@ -65,10 +65,10 @@
         display: flex;
         flex-direction: column;
 
-        width: 50%;
+        width: 35%;
         position: absolute;
         right: 0;
-        height: 12.5rem;
+        height: 13.5rem;
         top: 4rem;
         background-color: black;
 
@@ -160,6 +160,19 @@
 
     .phoneContainer {
         margin: 0 3rem 0 0;
+    }
+
+    .locationContainer img {
+        width: 24rem;
+    }
+
+    #formColumn {
+        width: 20rem;
+    }
+
+    .bottomBar p {
+        font-size: 1rem;
+        color: rgb(48, 48, 48);
     }
 }
 

@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1000px) {
+    .card-container {
+        height: 400px;
+    }
+    
+    .profile-picture {
+        height: 400px;
+    }
+    
+    .profile-details {
+        padding: 0 5vh;
+        height: 400px;
+        width: 30rem;
+    }
+
+    .profile-details h1 {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0.3rem;
+    }
+
+    .profile-details p {
+        font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile-details i {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about-card {
+        margin: 0;
+    }
+
+    .profile-details h1 {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0.3rem;
+    }
+
+    .profile-details p {
+        font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile-details i {
+        font-size: 1rem;
+    }
+}

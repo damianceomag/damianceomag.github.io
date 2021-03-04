@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1050px) {
+    body {
+        background-color: red;
+    }
+
+    .front-photo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .traits {
+        margin: 0;
+    }
+}

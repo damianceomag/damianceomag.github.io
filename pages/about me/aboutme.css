@@ -1,4 +1,4 @@
-.pCard {
+.about-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,52 +7,53 @@
     margin: 50px 0;
 }
 
-.pCard h1 {
+.about-card h1 {
     margin-top: 20px;
     margin-bottom: 40px;
 
     font-size: 2.5rem;
 }
 
-#profilePic {
+.card-container {
     display: flex;
-    
-    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
 }
 
-#profilePic img {
+.profile-picture img {
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    margin-left: auto;
-    margin-right: auto;
-
+    height: inherit;
     border-radius: 25px 0 0 25px;
 }
 
-#profileDetails {
+.profile-details {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background-color: rgb(43, 101, 189);
-    height: 500px;
     padding: 0 10vh;
 
     border-radius: 0 25px 25px 0;
 }
 
-#profileDetails p {
+.profile-details p {
     font-weight: 400;
     padding-bottom: 5vh;
 
     color: #fff;
 }
 
-#profileDetails i {
-    padding: 0;
+.profile-details i {
+    padding: 0.5rem 0;
+    color: white;
 }
+
+
+/* ABOUT ME SECTION */
 
 .about {
     display: flex;
@@ -97,10 +98,11 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #fff;
+    background-color: white;
     padding: 50px 50px;
     margin-top: 75px;
     border-radius: 25px;
+    /* border: 1px solid black; */
 }
 
 .about p {

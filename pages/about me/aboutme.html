@@ -4,50 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damian's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Damian Ceomag</title>
 
-    <link rel="stylesheet" href="./../../style.css">
-    <link rel="stylesheet" href="./aboutme.css">
+    <link rel="stylesheet" href="./../../style.css"> <!-- general style -->
+    <link rel="stylesheet" href="./../../mobile styles/style_mobile.css"> <!-- general mobile style -->
+    <link rel="stylesheet" href="../../mobile styles/aboutme_mobile.css"> <!-- mobile style for this page -->
+    <link rel="stylesheet" href="./aboutme.css"> <!-- style for this page -->
 </head>
 
 <body>
     <header>
-        <a href="./../../index.html">
-            <h1>Damian Ceomag</h1>
+        <a href="../../index.html">
+            <h1 id="logo"> <span id="tagLeft">&lt;name&gt;</span> Damian Ceomag <span id="tagRight">&lt;/name&gt;</span>
+            </h1>
         </a>
 
-        <ul>
-            <a href="./../../index.html">
+        <ul class="nav-links">
+            <a href="../../index.html">
                 <li>HOME</li>
             </a>
-            <a href="./../myprojects/myprojects.html">
-                <li>MY PROJECTS</li>
+            <a href="../../pages/myprojects/myprojects.html">
+                <li>PROJECTS</li>
             </a>
-            <a href="./../mycv/mycv.html">
-                <li>MY CV</li>
+            <a href="../skills/skills.html">
+                <li>SKILLS</li>
             </a>
             <a href="./aboutme.html">
                 <li>ABOUT ME</li>
             </a>
         </ul>
+
+        <ul class="nav-links-mobile">
+            <a href="../../index.html">
+                <li>HOME</li>
+            </a>
+            <a href="../../pages/myprojects/myprojects.html">
+                <li>PROJECTS</li>
+            </a>
+            <a href="../skills/skills.html">
+                <li>SKILLS</li>
+            </a>
+            <a href="./aboutme.html">
+                <li>ABOUT ME</li>
+            </a>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
     </header>
 
-    <section class="pCard">
-        <div id="profilePic">
-            <img src="./../../assets/pictures/profile.jpg" alt="profile">
+    <section class="about-card">
+        <div class="card-container">
+            <div class="profile-picture">
+                <img src="./../../assets/pictures/profile.jpg" alt="profile">
+            </div>
+
+            <div class="profile-details">
+                <h1>Damian Ceomag</h1>
+
+                <i class="fas fa-briefcase"></i>
+                <p>Transaction Processing Associate at Accenture Services</p>
+                <i class="fas fa-location-arrow"></i>
+                <p>Brasov, Romania</p>
+                <i class="fas fa-graduation-cap"></i>
+                <p>C.N. "Dr. Ioan Mesota" - High School Diploma</p>
+            </div>
         </div>
 
-        <div id="profileDetails">
-            <h1>Damian Ceomag</h1>
-
-            <i class="fas fa-briefcase"></i>
-            <p>Transaction Processing Associate at Accenture Services</p>
-            <i class="fas fa-location-arrow"></i>
-            <p>Brasov, Romania</p>
-            <i class="fas fa-graduation-cap"></i>
-            <p>C.N. "Dr. Ioan Mesota" - High School Diploma</p>
-        </div>
     </section>
 
     <section class="about">
@@ -74,19 +102,30 @@
     </section>
 
     <footer>
-        <div id="footerSection">
-            <div id="detailsColumn">
-                <a href="tel:0040732498021">
-                    <div id="phoneContainer">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>0040 732 498 021</p>
-                    </div>
-                </a>
+        <div class="footerSection">
+            <div class="detailsColumn">
+                <div class="contacts">
+                    <a href="tel:0040732498021">
+                        <div class="phoneContainer">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>0040 732 498 021</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:damian.ceomag@gmail.com">
+                        <div class="mailContainer">
+                            <i class="fas fa-at"></i>
+                            <p>damian.ceomag@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+
 
                 <a href="https://goo.gl/maps/nF1qgdNMbTtsgziE9" target="_blank">
-                    <div id="locationContainer">
+                    <div class="locationContainer">
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Brasov, Romania</p>
+                        <img src="../../assets/pictures/maps.PNG" alt="maps">
                     </div>
                 </a>
             </div>
@@ -102,14 +141,19 @@
                 <input type="email" id="userEmail" name="userEmail" placeholder="Email Address" class="input">
                 <textarea id="message" name="message" placeholder="Leave your message..." class="input"></textarea>
 
-                <button onclick="sendEmail()" class="input">Send</button>
+                <button onclick="sendEmail()" class="input" id="sendButton">Send</button>
+
+                <p id="errorMessage">*Please complete all fields before sending</p>
+
+                <p id="sentMessage">Thank you for your message!</p>
+
             </div>
         </div>
 
-        <div id="bottomBar">
+        <div class="bottomBar">
             <p>© 2021 Damian Ceomag</p>
 
-            <div id="socialIcons">
+            <div class="socialIcons">
                 <a href="https://www.linkedin.com/in/damian-ceomag/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://twitter.com/Damian_Ceomag"><i class="fab fa-twitter"></i></a>
                 <a href="https://github.com/damianceomag"><i class="fab fa-github"></i></a>
@@ -120,6 +164,7 @@
 
     <!-- SCRIPTS -->
     <script src="./../../email_service.js"></script>
+    <script src="../../index.js"></script>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/433568d708.js" crossorigin="anonymous"></script>

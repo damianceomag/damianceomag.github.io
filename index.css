@@ -1,12 +1,11 @@
-/* SECTION: */
-section {
+/* SECTION FRONT-PHOTO: */
+.front-photo {
     display: flex;
     flex-direction: column;
-    margin: 0 10%;
-    margin-bottom: 1%;
+    margin: 0 6.2rem 2rem 6.2rem;
 }
 
-section img {
+.front-photo img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,14 +14,94 @@ section img {
     height: 100%;
 }
 
-section p {
+.front-photo p {
     display: flex;
     justify-content: flex-end;
 }
 
-section p:first-of-type {
+.front-photo p:first-of-type {
     padding-top: 0.8rem;
 
     font-size: 2rem;
     font-weight: 600;
+}
+
+/* SECTION TRAITS: */
+
+.traits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin: 0 6.2rem;
+    background-image: url(./assets/pictures/back4.jpg);
+    background-size: cover;
+}
+
+.traits i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.traits p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.5rem;
+    width: 30rem;
+    margin: 0 4rem;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    background-color: rgb(43, 101, 189);
+}
+
+.trait {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+
+    margin: 5rem 0 5rem -10rem;
+}
+
+.trait i{
+    position: absolute;
+}
+
+.trait p {
+    border-radius: 0 5rem 5rem 0;
+}
+
+.trait-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    position: relative;
+
+    margin-right: -10rem;
+}
+
+.trait-reverse i {
+    position: absolute;
+}
+
+.trait-reverse p {
+    border-radius: 5rem 0 0 5rem;
 }

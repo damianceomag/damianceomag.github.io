@@ -1,23 +1,4 @@
 @media only screen and (max-width: 850px) {
-    @font-face {
-        font-family: WorkSans;
-        src: url(./assets/font-name/WorkSans-Regular.ttf);
-    }
-    
-    @font-face {
-        font-family: Quicksand;
-        src: url(./assets/font-page/Quicksand-Regular.ttf);
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: Quicksand;
-        box-sizing: border-box;
-    
-        animation-timing-function: linear;
-    } 
-
     body {
         min-height: 100vh;
     

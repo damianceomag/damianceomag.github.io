@@ -24,6 +24,10 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER: */
 
 header {
@@ -103,77 +107,79 @@ footer {
 }
 
 footer h1 {
-    /* margin-top: 10px; */
-
     color: #fff;
 }
 
-#footerSection {
+.footerSection {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 
     margin: 5vh 0;
 }
 
-#detailsColumn {
+.detailsColumn {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    /* width: 80rem; */
+}
+
+.contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-#phoneContainer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 
-    margin-top: 20px;
-    padding: 20px;
+    margin-right: 6rem;
 }
 
-#phoneContainer p, #locationContainer p {
+.phoneContainer, .mailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneContainer {
+    margin-bottom: 6rem;
+}
+
+.phoneContainer p, .locationContainer p, .mailContainer p {
     color: white;
     font-weight: 400;
 }
 
-#locationContainer {
+.locationContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 7rem;
 }
 
-#locationContainer img {
+.locationContainer img {
     margin-top: 10px;
     width: 30rem;
 }
 
 .fas {
     font-size: 3rem;
-    margin-bottom: 10px;
     color:rgb(43, 101, 189);
 
-    padding: 10px;
+    padding: 5px;
 }
 
 #formColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: auto;
 }
 
 #formColumn h1 {
     display: flex;
     align-self: center;
-
-    top: 10px;
 }
 
 #formColumn div {

@@ -25,6 +25,8 @@
         flex-direction: column;
 
         overflow-x: hidden;
+
+        background-color: blue;
     }
 
     /* HEADER: */
@@ -142,4 +144,40 @@
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px,-6px);
     }
+
+    /* FOOTER: */
+    .detailsColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+
+        margin: 0 0 4rem 0;
+    }
+
+    .phoneContainer {
+        margin: 0 3rem 0 0;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    /* FOOTER: */
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailsColumn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 5rem;
+    }
+    
 }

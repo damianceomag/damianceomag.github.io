@@ -33,8 +33,39 @@
         display: none;
     }
 
-    .extRefMobile{
+    #extRefMobile{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        margin-bottom: 3rem;
+    }
+
+    .ext-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #extRefMobile a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 1rem;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+    
+        color: white;
+        background-color: rgb(43, 101, 189);
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    #extRefMobile a:hover {
+        background-color: transparent;
+        color: rgb(43, 101, 189);
     }
 }
 
@@ -52,9 +83,7 @@
         margin-right: 1rem;
     }
 
-    
+
     /* EXTERNAL REFERENCES */
-    .extRefMobile{
-        display: flex;
-    }
+    
 }

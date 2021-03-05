@@ -1,15 +1,41 @@
-@media only screen and (max-width: 1050px) {
-    body {
-        background-color: red;
-    }
+@media only screen and (max-width: 850px) {
 
-    .front-photo {
+    #quote {
         display: flex;
-        flex-direction: column;
-        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 0;
+
+        font-size: 1.2rem;
     }
 
-    .traits {
+    #source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 0.8rem;
+        margin-right: 0;
+    }
+
+    #traitsMobile {
+        margin-top: 3rem;
+    }
+
+    .traits .trait p {
+        width: 20rem;
+    }
+
+    .traits .trait-reverse p {
+        width: 20rem;
+    }
+
+    .traits .trait {
+        margin: 5rem 0;
+    }
+
+    .traits .trait-reverse {
         margin: 0;
     }
 }

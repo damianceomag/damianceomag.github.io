@@ -2,7 +2,8 @@
 .front-photo {
     display: flex;
     flex-direction: column;
-    margin: 0 6.2rem 2rem 6.2rem;
+
+    /* margin: 0 6.2rem 2rem 6.2rem; */
 }
 
 .front-photo img {
@@ -17,10 +18,12 @@
 .front-photo p {
     display: flex;
     justify-content: flex-end;
+
+    margin-right: 3rem;
 }
 
 .front-photo p:first-of-type {
-    padding-top: 0.8rem;
+    margin-top: 0.8rem;
 
     font-size: 2rem;
     font-weight: 600;
@@ -36,7 +39,7 @@
 
     position: relative;
 
-    margin: 0 6.2rem;
+    margin-top: 5rem;
     background-image: url(./assets/pictures/back4.jpg);
     background-size: cover;
 }

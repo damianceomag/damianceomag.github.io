@@ -1,9 +1,4 @@
 .about-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
     margin: 50px 0;
 }
 
@@ -19,13 +14,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 500px;
 }
 
 .profile-picture img {
     display: flex;
 
-    height: inherit;
+    height: 35rem;
     border-radius: 25px 0 0 25px;
 }
 
@@ -33,25 +27,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: rgb(43, 101, 189);
-    padding: 0 10vh;
+    
 
     border-radius: 0 25px 25px 0;
+    height: 35rem;
+    width: 50rem;
 }
 
-.profile-details p {
-    font-weight: 400;
-    padding-bottom: 5vh;
+.profile-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+    margin-bottom: 2rem;
+}
+
+.profile-element p {
+    font-weight: 300;
     color: #fff;
+    text-align: center;
 }
 
-.profile-details i {
+.profile-element i {
     padding: 0.5rem 0;
     color: white;
 }
 
+.profile-element span {
+    font-weight: bold;
+}
+
+.work-element {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
+.work {
+    margin-right: 3rem;
+}
 
 /* ABOUT ME SECTION */
 
@@ -108,4 +129,37 @@
 .about p {
     color: rgb(43, 101, 189);
     font-weight: 600;
+}
+
+/* ESTERNAL REFERENCES SECTION */
+
+.ext-references-mobile {
+    display: none;
+}
+
+.ext-references {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+
+.ext-references a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+
+    color: white;
+    background-color: rgb(43, 101, 189);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ext-references a:hover {
+    
 }

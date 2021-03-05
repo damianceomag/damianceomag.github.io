@@ -1,6 +1,118 @@
-.resume {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.skill-section {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5rem;
+}
+
+.prog-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
+    position: relative;
+}
+
+.prog-skills h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -2.5rem;
+
+    height: 4rem;
+    width: 26rem;
+    border-radius: 2rem;
+
+    background-color: rgb(43, 101, 189);
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 50rem;
+    width: 80rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+
     background-color: white;
+}
+
+.l-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.p-subtitle i {
+    font-size: 1.5rem;
+    color: teal;
+}
+
+.p-subtitle p {
+    font-size: 2.3rem;
+    color: teal;
+}
+
+.l-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70rem;
+}
+
+.l-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4rem 0;
+}
+
+.l-item i{
+    font-size: 10rem;
+    padding: 0;
+}
+
+
+
+.p-subtitle2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-subtitle2 i {
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.p-subtitle2 p {
+    font-size: 2.3rem;
+    color: orange;
 }

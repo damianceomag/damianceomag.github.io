@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="./../../style.css"> <!-- general style -->
     <link rel="stylesheet" href="../../mobile styles/style_mobile.css"> <!-- general mobile style -->
-    <link rel="stylesheet" href="../../mobile styles/skill_mobile.css"> <!-- mobile style for this page -->
+    <link rel="stylesheet" href="../../mobile styles/skills_mobile.css"> <!-- mobile style for this page -->
     <link rel="stylesheet" href="./skills.css"> <!-- style for this page -->
 </head>
 
@@ -59,18 +59,17 @@
     </header>
 
     <section class="skill-section">
-        <div class="prog-skills">
+        <div class="s-container">
             <h1>PROGRAMMING SKILLS</h1>
-            <div class="skills-container">
-                <div class="l-container">
+            <div class="skills-container" id="progContainerMobile">
+                <div class="l-container" id="lProgContainerMobile">
 
                     <div class="p-subtitle">
                         <i class="fas fa-check-circle"></i>
                         <p>Learned</p>
                     </div>
 
-
-                    <div class="l-items">
+                    <div class="l-items" id="progItemsMobile">
                         <div class="l-item">
                             <i class="fab fa-html5"></i>
                             <p>HTML5</p>
@@ -95,7 +94,7 @@
                         <p>Currently learning</p>
                     </div>
 
-                    <div class="l-items">
+                    <div class="l-items" id="progItemsMobile2">
                         <div class="l-item">
                             <i class="fab fa-react"></i>
                             <p>ReactJS</p>
@@ -109,6 +108,38 @@
                 </div>
             </div>
 
+    </section>
+
+    <section class="skill-section">
+        <div class="s-container">
+            <h1>LANGUAGE SKILLS</h1>
+            <div class="language-skills-container" id="languageContainerMobile">
+                <div class="languages" id="languagesMobile">
+                    <div class="language-item">
+                        <div class="flag-container">
+                            <img src="../../assets/pictures/romania.png" alt="romanian-language">
+                            <p class="skill-level">native</p>
+                        </div>
+                        <p>Romanian</p>
+                    </div>
+
+                    <div class="language-item">
+                        <div class="flag-container">
+                            <img src="../../assets/pictures/italia.png" alt="italian-language">
+                            <p class="skill-level">native</p>
+                        </div>
+                        <p>Italian</p>
+                    </div>
+
+                    <div class="language-item">
+                        <div class="flag-container">
+                            <img src="../../assets/pictures/england.png" alt="english-language">
+                            <p class="skill-level">B2</p>
+                        </div>
+                        <p>English</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <footer>

@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* PROGRAMMING SKILLS SECTION */
+
 .skill-section {
     display: flex;
     align-items: center;
@@ -11,7 +13,7 @@
     margin-top: 5rem;
 }
 
-.prog-skills {
+.s-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +22,7 @@
     position: relative;
 }
 
-.prog-skills h1 {
+.s-container h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +43,7 @@
     align-items: center;
     flex-direction: column;
 
-    height: 50rem;
+    height: 42rem;
     width: 80rem;
     border-radius: 2rem;
     margin-bottom: 5rem;
@@ -54,6 +56,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    margin-bottom: 5rem;
 }
 
 .p-subtitle {
@@ -89,8 +93,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin: 4rem 0;
 }
 
 .l-item i{
@@ -98,7 +100,9 @@
     padding: 0;
 }
 
-
+.l-item p {
+    font-weight: 600;
+}
 
 .p-subtitle2 {
     display: flex;
@@ -115,4 +119,89 @@
 .p-subtitle2 p {
     font-size: 2.3rem;
     color: orange;
+}
+
+.fa-html5 {
+    color: #DD4B25;
+}
+
+.fa-css3-alt {
+    color: rgb(26,111,180);
+}
+
+.fa-js-square {
+    color: rgb(239,216,29);
+}
+
+.fa-react {
+    color: rgb(94,211,243);
+}
+
+.fa-bootstrap {
+    color: rgb(83,59,120);
+}
+
+/* LANGUAGE SKILL SECTION */
+
+.language-skills-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 20rem;
+    width: 80rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+
+    background-color: white;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 6rem;
+    width: 70rem;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.flag-container img {
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 7rem;
+    border: 0.2rem solid black;
+}
+
+.flag-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: -0.3rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+
+    background-color: black;
+    color: white;
+}
+
+.language-item p {
+    font-weight: 600;
 }

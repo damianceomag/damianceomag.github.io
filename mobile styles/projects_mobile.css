@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1300px) {
+    #projectsContainerMobile {
+        width: 30rem;
+        height: 100%;
+    }
+
+    #projectsMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        margin: 2rem 2rem;
+    }
+
+    #projectsMobile .project-item {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #projectsContainerMobile {
+        width: 100%;
+    }
+
+}
